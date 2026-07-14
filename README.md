@@ -4,6 +4,20 @@ This repository publishes the i64 database archive for the AiMaMi restoration.
 
 ## Archives
 
+### 1.1.8
+
+- File: `1.1.8/AiMaMi-1.1.8-i64-databases.zip`
+- Size: `117621545` bytes
+- SHA-256: `439dd41b5217020e30088cc45cb0add337997985501201f580cb54013276cbe6`
+- Contents: macOS and Windows i64 databases
+
+| Entry | Size | SHA-256 |
+| --- | ---: | --- |
+| `macos/AiMaMi-1.1.8-macos.i64` | `56890831` bytes | `3bc94bdbd30d1a1206d9733806000d278967f76f242fcac75b5d45349df7b904` |
+| `windows/AiMaMi-1.1.8-windows.i64` | `62276896` bytes | `01878495032aca39a123c9d0008c73bce10032255f5939baf5328b16b49c317b` |
+
+> macOS entry is the x86_64 slice analysis database for 1.1.8.
+
 ### 1.1.1
 
 - File: `1.1.1/AiMaMi-1.1.1-i64-databases.zip`
