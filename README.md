@@ -4,6 +4,19 @@ This repository publishes the i64 database archive for the AiMaMi restoration.
 
 ## Archives
 
+### 1.2.2 / 1.2.1
+
+- File: `1.2.2/AiMaMi-1.2.2-i64-databases.zip`
+- Size: `64072296` bytes
+- SHA-256: `3b6b89c4cd326655ce3f57ea4a2895d512db9358e063f1b00f333b78d424d7dc`
+- Contents: macOS i64 database (Windows 1.2.1 i64 pending SMB sync — not yet in this archive)
+
+| Entry | Size | SHA-256 |
+| --- | ---: | --- |
+| `macos/AiMaMi-1.2.2-macos.i64` | `291155498` bytes | `2cc36fb77f3d2a245659eb28a8a7391a82b6e091a30a5d97aa74872392780b22` |
+
+> Platform versions diverge: macOS=1.2.2, Windows=1.2.1. Windows 1.2.1 i64 will be added when synced.
+
 ### 1.1.8
 
 - File: `1.1.8/AiMaMi-1.1.8-i64-databases.zip`
