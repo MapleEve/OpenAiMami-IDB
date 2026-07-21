@@ -21,15 +21,16 @@ This repository publishes the i64 database archive for the AiMaMi restoration.
 ### 1.2.2 / 1.2.1
 
 - File: `1.2.2/AiMaMi-1.2.2-i64-databases.zip`
-- Size: `64072296` bytes
-- SHA-256: `3b6b89c4cd326655ce3f57ea4a2895d512db9358e063f1b00f333b78d424d7dc`
-- Contents: macOS i64 database (Windows 1.2.1 i64 pending SMB sync — not yet in this archive)
+- Size: `117553032` bytes
+- SHA-256: `f65d1e2cea971c37b059bf558e7e5aa51ad5957d9a4e9145bf7da9470f8cecda`
+- Contents: macOS 1.2.2 and Windows 1.2.1 i64 databases
 
 | Entry | Size | SHA-256 |
 | --- | ---: | --- |
-| `macos/AiMaMi-1.2.2-macos.i64` | `291155498` bytes | `2cc36fb77f3d2a245659eb28a8a7391a82b6e091a30a5d97aa74872392780b22` |
+| `macos/AiMaMi-1.2.2-macos.i64` | `48981731` bytes | `637d2e0c3a66717d6313c5aa7b2f00de3b2ed794823677a0f779b85811ebf7d1` |
+| `windows/AiMaMi-1.2.1-windows.i64` | `68570619` bytes | `98b4aa7bed9800d93638817e7fc06833491cdcf4af9350f2a5b7f13697430681` |
 
-> Platform versions diverge: macOS=1.2.2, Windows=1.2.1. Windows 1.2.1 i64 will be added when synced.
+> Platform versions diverge: macOS=1.2.2, Windows=1.2.1. Both databases organise the application functions into a `codexmate_lib/...` module folder tree; the Windows (stripped) database additionally recovers command handler names and per-module attribution for the app's own functions.
 
 ### 1.1.8
 
