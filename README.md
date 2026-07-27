@@ -2,6 +2,31 @@
 
 This repository publishes the i64 database archive for the AiMaMi restoration.
 
+## 这是什么 / What this is
+
+AiMaMi 是一个闭源的 Rust + Tauri 2 桌面应用。本仓单独发布它的 **IDA 参考数据库（.i64）**，供 [OpenAiMami](https://github.com/MapleEve/OpenAiMaMi) 主仓库的脱敏文本证据链回指核对。主仓库不直接保存大体积 `.i64` 文件，IDB 作为独立 Git LFS 资产存在，保持与主仓库源码历史分离。
+
+每个版本的数据库都已把应用自身函数按 `codexmate_lib/...` 模块路径归入 IDA function folder 目录树：
+- **macOS（带符号）**：全量应用函数命名 + 注释 + 模块目录树。
+- **Windows（strip 后）**：恢复命令 handler 名 + 跨平台字符串签名名 + 按模块归属（panic-Location 锚定 + 严格调用图传播）。
+
+## 如何使用 / How to use
+
+```bash
+# 克隆（跳过 LFS 大文件下载，按需取）
+GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/MapleEve/OpenAiMami-IDB.git
+cd OpenAiMami-IDB
+
+# 按需拉取某版本的 archive
+git lfs pull --include="1.2.3/*"
+
+# 解压
+unzip 1.2.3/AiMaMi-1.2.3-macos.zip    # -> macos/AiMaMi-1.2.3-macos.i64
+unzip 1.2.3/AiMaMi-1.2.3-windows.zip  # -> windows/AiMaMi-1.2.3-windows.i64
+```
+
+用 IDA Pro 9.3+ 打开 `.i64`，在 Functions 窗口按 `codexmate_lib/...` 目录树浏览。
+
 ## Archives
 
 ### 1.2.3
@@ -9,14 +34,14 @@ This repository publishes the i64 database archive for the AiMaMi restoration.
 - Files (split per platform to stay under upload limits):
   - `1.2.3/AiMaMi-1.2.3-macos.zip` — `87445656` bytes — SHA-256 `f227bc5565a4977916cefa9cf5e5ac92745541229fba5cb0f2c128832d137b1d`
   - `1.2.3/AiMaMi-1.2.3-windows.zip` — `101505379` bytes — SHA-256 `3d46c1fc5f778b8110f6e8c1b05ef2a949aa5b559564d7f26c42a89692332a68`
-- Contents: macOS 1.2.3 and Windows 1.2.3 i64 databases (both platforms on the same version)
+- Contents: macOS 1.2.3 and Windows 1.2.3 i64 databases (both platforms on the same version, current baseline)
 
 | Entry | Size | SHA-256 |
 | --- | ---: | --- |
 | `macos/AiMaMi-1.2.3-macos.i64` | `87445450` bytes | `2948a65eb86f525702bd018f4486ddbe5113cc1859ce8ad3d9b9cb4fb2d4e758` |
 | `windows/AiMaMi-1.2.3-windows.i64` | `101505165` bytes | `29d948bf85dd48ed54b33c10642efd9cc6c33e3e88b88fed1e2f2831edbd9eff` |
 
-> Both databases organise the application functions into a `codexmate_lib/...` module folder tree. The macOS (symbol-rich) database carries the full application function set with names, comments and module folders; the Windows (stripped) database recovers command handler names, cross-platform string-signature names and per-module attribution for the app's own functions.
+> 1.2.3 是当前 baseline。macOS 库承载全量 1638 个应用函数的命名+注释+目录树；Windows（strip）库恢复 115 个命令 handler 真名 + 242 个跨平台字符串签名名 + 938 个函数的按模块归属。对应脱敏证据见 OpenAiMami 主仓 `evidence/full-chain/` 下 1.2.3。
 
 ### 1.2.2 / 1.2.1
 
