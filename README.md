@@ -7,14 +7,14 @@ This repository publishes the i64 database archive for the AiMaMi restoration.
 ### 1.2.3
 
 - Files (split per platform to stay under upload limits):
-  - `1.2.3/AiMaMi-1.2.3-macos.zip` — `66052555` bytes — SHA-256 `05241898975004eac9fc3f7b8bffccb57fb85dd3b94523491b9d41ebe6d987e3`
-  - `1.2.3/AiMaMi-1.2.3-windows.zip` — `70509195` bytes — SHA-256 `20be2a423e4d2985ea8e475b2d1f26584cfa6ecbfd0db55dc0fa2dcca43687e4`
+  - `1.2.3/AiMaMi-1.2.3-macos.zip` — `87445656` bytes — SHA-256 `f227bc5565a4977916cefa9cf5e5ac92745541229fba5cb0f2c128832d137b1d`
+  - `1.2.3/AiMaMi-1.2.3-windows.zip` — `101505379` bytes — SHA-256 `3d46c1fc5f778b8110f6e8c1b05ef2a949aa5b559564d7f26c42a89692332a68`
 - Contents: macOS 1.2.3 and Windows 1.2.3 i64 databases (both platforms on the same version)
 
 | Entry | Size | SHA-256 |
 | --- | ---: | --- |
-| `macos/AiMaMi-1.2.3-macos.i64` | `66052349` bytes | `4181da5dbd266ac06dc456893a63f4afafc7e73e0ddae9f920d5409882dca455` |
-| `windows/AiMaMi-1.2.3-windows.i64` | `70508981` bytes | `f7ed942fdd1383463580b927d4b2123f63ed54b4f3ec9ba270f5e6800c87415c` |
+| `macos/AiMaMi-1.2.3-macos.i64` | `87445450` bytes | `2948a65eb86f525702bd018f4486ddbe5113cc1859ce8ad3d9b9cb4fb2d4e758` |
+| `windows/AiMaMi-1.2.3-windows.i64` | `101505165` bytes | `29d948bf85dd48ed54b33c10642efd9cc6c33e3e88b88fed1e2f2831edbd9eff` |
 
 > Both databases organise the application functions into a `codexmate_lib/...` module folder tree. The macOS (symbol-rich) database carries the full application function set with names, comments and module folders; the Windows (stripped) database recovers command handler names, cross-platform string-signature names and per-module attribution for the app's own functions.
 
