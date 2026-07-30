@@ -29,6 +29,21 @@ unzip 1.2.3/AiMaMi-1.2.3-windows.zip  # -> windows/AiMaMi-1.2.3-windows.i64
 
 ## Archives
 
+### 1.2.4
+
+- Files (split per platform to stay under upload limits):
+  - `1.2.4/AiMaMi-1.2.4-macos.zip` — `295448948` bytes — SHA-256 `5dcca79f3b996c3900631fe412a024feebc9c301892b0c9f08158a9a8077c400`
+  - `1.2.4/AiMaMi-1.2.4-windows.zip` — `71513001` bytes — SHA-256 `d7010e43a59c3068291a1e83c672f620419aeae10d5b966a201f455961e7a6d2`
+- Contents: macOS 1.2.4 and Windows 1.2.4 i64 databases (both platforms on the same version, current delta)
+
+| Entry | Size | SHA-256 |
+| --- | ---: | --- |
+| `macos/AiMaMi-1.2.4-macos.i64` | `295415974` bytes | `5984f344ba4cdf051883c918679c7c3d718becfde8fbadeedeeedf6c380cef73` |
+| `windows/AiMaMi-1.2.4-windows.i64` | `71512787` bytes | `17466020f5aee6d3156f6cc32b9ee1c5c51eadeb79889409862af039d087bdc4` |
+
+> 1.2.4 is the current delta over the 1.2.3 baseline. Both databases carry the 1.2.4 delta functions with names, comments and module folders; the macOS (symbol-rich) database covers all 116 new application functions, the Windows (stripped) database recovers 20 anchored delta functions (3 command handlers + 17 cross-platform string-signature names) plus 955 baseline module attributions.
+
+
 ### 1.2.3
 
 - Files (split per platform to stay under upload limits):
