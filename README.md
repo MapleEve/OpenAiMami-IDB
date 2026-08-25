@@ -29,6 +29,20 @@ unzip 1.2.3/AiMaMi-1.2.3-windows.zip  # -> windows/AiMaMi-1.2.3-windows.i64
 
 ## Archives
 
+### 1.2.6
+
+- File: `1.2.6/AiMaMi-1.2.6-i64-databases.zip`
+- Size: `133685220` bytes
+- SHA-256: `421a3cb816959c390d21d5cadb0e62ee5c64187eef547638ba1ec5ca555bfb99`
+- Contents: macOS 1.2.6 and Windows 1.2.6 i64 databases
+
+| Entry | Size | SHA-256 |
+| --- | ---: | --- |
+| `macos/AiMaMi-1.2.6-macos.i64` | `54844474` bytes | `2d260b7d8fe4d14f933c0e57884aaa23bd0c2a7562e3ee0ce3a1bc8f3e83ff04` |
+| `windows/AiMaMi-1.2.6-windows.i64` | `80729025` bytes | `e8e472316307c77b83ea96a1bcd9c50d36ce5f97aac397244ee997b94cb52898` |
+
+> 1.2.6 is the latest version. Both databases carry the 1.2.6 delta functions with names, comments and module folders; the macOS (symbol-rich) database covers all application functions, the Windows (stripped) database recovers command handler names and per-module attribution.
+
 ### 1.2.4
 
 - Files (split per platform to stay under upload limits):
