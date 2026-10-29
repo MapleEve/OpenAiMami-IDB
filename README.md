@@ -29,6 +29,22 @@ unzip 1.2.3/AiMaMi-1.2.3-windows.zip  # -> windows/AiMaMi-1.2.3-windows.i64
 
 ## Archives
 
+### 1.2.7
+
+- File: `1.2.7/AiMaMi-1.2.7-i64-databases.zip`
+- Size: `316152087` bytes
+- SHA-256: `2b2953757463a666897d63c00b660a2cc2f54791da919030a3af77254284c006`
+- Contents: macOS 1.2.7 (release + pre) and Windows 1.2.7 (release + pre) i64 databases
+
+| Entry | Size | SHA-256 |
+| --- | ---: | --- |
+| `macos/AiMaMi-1.2.7-macos-release.i64` | `70876991` bytes | `61cd97b5e34f73028b13e3ab7fd3cb651f3cf9b4121735d39d4bd4150e43fff3` |
+| `macos/AiMaMi-1.2.7-macos-pre.i64` | `57978587` bytes | `c969c94402d1a32790660f95d70a52d9b9556414244ee72ea86c37c0f6e3a49a` |
+| `windows/AiMaMi-1.2.7-windows-release.i64` | `95184111` bytes | `497ec0340e584c3036995ef15fbf9d98570e9f17f4ec0f2c2bbce7fcf06af358` |
+| `windows/AiMaMi-1.2.7-windows-pre.i64` | `96153747` bytes | `3ed5cebadff6e17d54b764263e0b0c828936edfdd49a2aacc4c7ee38c4e4556c` |
+
+> 1.2.7 is the latest version. Starting from this release each platform ships both the stable (`-release`) and pre-release (`-pre`) databases. All four carry the 1.2.7 delta functions with names, comments and module folders; the macOS (symbol-rich) databases cover all application functions, the Windows (stripped) databases recover command handler names and per-module attribution.
+
 ### 1.2.6
 
 - File: `1.2.6/AiMaMi-1.2.6-i64-databases.zip`
@@ -41,7 +57,7 @@ unzip 1.2.3/AiMaMi-1.2.3-windows.zip  # -> windows/AiMaMi-1.2.3-windows.i64
 | `macos/AiMaMi-1.2.6-macos.i64` | `54914191` bytes | `a4faf853449e7a224c474acc979d5e9bd744dc243905d50515f6ecf5ba756c37` |
 | `windows/AiMaMi-1.2.6-windows.i64` | `80729025` bytes | `e8e472316307c77b83ea96a1bcd9c50d36ce5f97aac397244ee997b94cb52898` |
 
-> 1.2.6 is the latest version. Both databases carry the 1.2.6 delta functions with names, comments and module folders; the macOS (symbol-rich) database covers all application functions, the Windows (stripped) database recovers command handler names and per-module attribution.
+> Both databases carry the 1.2.6 delta functions with names, comments and module folders; the macOS (symbol-rich) database covers all application functions, the Windows (stripped) database recovers command handler names and per-module attribution.
 
 ### 1.2.4
 
